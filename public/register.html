@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fixed top navbar example · Bootstrap</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#765827;">
+  <a class="navbar-brand" href="#">BookItPro</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="text-center signing">
+<form class="form-signin" onsubmit="createUser(); return false;">
+  <img class="mb-4" src="images/logo.png" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+  <label for="username" class="sr-only">username</label>
+  <input type="username" id="username" class="form-control" placeholder="username" required autofocus>
+  <label for="firstName" class="sr-only">Surname</label>
+  <input type="firstName" id="firstName" class="form-control" placeholder="firstName" required autofocus>
+  <label for="lastName" class="sr-only">Surname</label>
+  <input type="lastName" id="lastName" class="form-control" placeholder="lastName" required autofocus>
+  <label for="email" class="sr-only">Email address</label>
+  <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+  <label for="age" class="sr-only">age</label>
+  <input type="age" id="age" class="form-control" placeholder="age" required autofocus>
+  <label for="country" class="sr-only">Surname</label>
+  <input type="country" id="country" class="form-control" placeholder="country" required autofocus>
+  <label for="gender" class="sr-only">Surname</label>
+  <input type="gender" id="gender" class="form-control" placeholder="gender" required autofocus>
+  <label for="password" class="sr-only">Password</label>
+  <input type="password" id="password" class="form-control" placeholder="Password" required>
+  <label for="password2" class="sr-only">Confirm password</label>
+  <input type="password" id="password2" class="form-control" placeholder="Confirm password" required>
+  <button class="btn btn-lg btn-block" style="background-color:#65451F; color:white" type="submit">Sign up</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
+</form>
+</div>
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
